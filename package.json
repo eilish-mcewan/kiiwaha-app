@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "watch:css": "npx @tailwindcss/cli -i ./styles.css -o ./output.css --watch"
   },
   "dependencies": {
-    "electron": "^41.0.3"
+    "@tailwindcss/cli": "^4.2.2",
+    "electron": "^41.0.3",
+    "tailwindcss": "^4.2.2"
   }
 }
