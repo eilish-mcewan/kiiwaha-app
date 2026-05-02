@@ -15,5 +15,5 @@ I'm not so good with my JS logic so I'm hoping to solidify some learning. script
 ### Sources (To be updated regularly)
 
 **Template:** @nashallery
-**Definitions:** Te Aka Māori Dictionary, my baby sister who is much more proficient with her reo than I am, Hemi Kelly's pukapuka/book "A Phrase A Day", and the kaiako/teachers at Te Wānanga O Raukawa and the poupou/certificates I have achieved there.
+**Definitions:** Te Aka Māori Dictionary, mahurumaori.com, Taringa Podcast, Hemi Kelly's pukapuka/book "A Phrase A Day", and the kaiako/teachers at Te Wānanga O Raukawa and the poupou/certificates I have achieved there.
 
