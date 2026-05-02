@@ -9,7 +9,11 @@ document.querySelectorAll('.theme-btn').forEach(btn => {
   btn.addEventListener('click', () => setTheme(btn.dataset.theme))
 })
 
-fetch('./models/kiiwaha.json')
+const remoteURL = 'https://raw.githubusercontent.com/eilish-mcewan/kiiwaha-app/main/models/kiiwaha.json'
+const localURL  = './models/kiiwaha.json'
+
+fetch(remoteURL)
+  .catch(() => fetch(localURL))
   .then(response => response.json())
   .then(data => {
     const today = new Date()

@@ -1,14 +1,32 @@
 {
-  "name": "electron-app",
+  "name": "kiiwaha-app",
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "watch:css": "npx @tailwindcss/cli -i ./styles.css -o ./output.css --watch"
+    "watch:css": "npx @tailwindcss/cli -i ./styles.css -o ./output.css --watch",
+    "build:css": "npx @tailwindcss/cli -i ./styles.css -o ./output.css",
+    "dist": "npm run build:css && electron-builder"
   },
-  "dependencies": {
+  "build": {
+    "appId": "com.kiiwaha.app",
+    "productName": "Kīwaha",
+    "files": [
+      "index.html",
+      "script.js",
+      "output.css",
+      "main.js",
+      "models/**"
+    ],
+    "mac": {
+      "category": "public.app-category.education",
+      "target": "dmg"
+    }
+  },
+  "devDependencies": {
     "@tailwindcss/cli": "^4.2.2",
     "electron": "^41.0.3",
+    "electron-builder": "^25.1.8",
     "tailwindcss": "^4.2.2"
   }
 }
